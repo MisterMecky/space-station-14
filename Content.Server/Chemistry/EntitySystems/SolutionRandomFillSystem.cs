@@ -33,5 +33,6 @@ public sealed class SolutionRandomFillSystem : EntitySystem
         }
 
         target.AddReagent(reagent, component.Quantity);
+        _solutionsSystem.UpdateAppearance(uid, target);
     }
 }
